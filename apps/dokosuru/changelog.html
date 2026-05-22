@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>どこする 変更履歴</title>
+    <link rel="stylesheet" href="../../assets/css/style.css" />
+    <style>
+      .release {
+        border-top: 1px solid var(--border);
+        padding-top: 24px;
+        margin-top: 24px;
+      }
+      .release:first-of-type {
+        border-top: none;
+        padding-top: 0;
+        margin-top: 0;
+      }
+      .release-head {
+        display: flex;
+        align-items: baseline;
+        gap: 12px;
+        flex-wrap: wrap;
+        margin-bottom: 8px;
+      }
+      .release-head h2 {
+        margin: 0;
+        border-bottom: none;
+        padding-bottom: 0;
+        font-size: 1.4rem;
+      }
+      .release-date {
+        color: var(--muted);
+        font-size: 0.9rem;
+        font-variant-numeric: tabular-nums;
+      }
+      .tag {
+        display: inline-block;
+        background: var(--accent);
+        color: #fff;
+        font-size: 0.7rem;
+        font-weight: 600;
+        padding: 2px 8px;
+        border-radius: 999px;
+        letter-spacing: 0.02em;
+      }
+      .release h3 {
+        font-size: 0.8rem;
+        font-weight: 600;
+        color: var(--muted);
+        text-transform: uppercase;
+        letter-spacing: 0.06em;
+        margin: 16px 0 6px;
+      }
+    </style>
+  </head>
+  <body>
+    <header class="hero">
+      <p><a href="./">← どこする</a></p>
+      <h1>変更履歴</h1>
+      <p>どこする のアップデート内容をバージョンごとにまとめています。</p>
+    </header>
+
+    <main class="container prose">
+      <section class="release">
+        <div class="release-head">
+          <h2>1.0.1</h2>
+          <span class="release-date">2026-05-22</span>
+          <span class="tag">Latest</span>
+        </div>
+        <h3>改善</h3>
+        <ul>
+          <li>場所をピンで指定する機能の使い勝手を改善しました。</li>
+          <li>地図を長押しすることで、その場所にピンを立てられるようになりました。</li>
+        </ul>
+        <h3>既知の不具合</h3>
+        <ul>
+          <li>アプリ起動後の一回目の場所登録において、マップ画面から検索もしくは場所を選んで登録画面に遷移したときに、登録画面が閉じてマップ画面に戻されることがあります。</li>
+        </ul>
+      </section>
+
+      <section class="release">
+        <div class="release-head">
+          <h2>1.0.0</h2>
+          <span class="release-date">2026-05-20</span>
+        </div>
+        <h3>新機能</h3>
+        <ul>
+          <li>どこする をリリースしました。</li>
+        </ul>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p><a href="./">← どこする</a> ｜ <a href="../../">Portfolio</a></p>
+    </footer>
+  </body>
+</html>
